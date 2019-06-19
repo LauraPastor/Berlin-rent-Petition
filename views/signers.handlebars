@@ -1,0 +1,31 @@
+
+<div class="flex">
+    <div class="container">
+
+
+        <img  id="petitionImg" src="berlin.jpg" alt="Berlin">
+
+        <h2>Vestiges of the communist economy made Berlin one of the most economic options in Europe where was possible to have very high quality of life with very little income which benefited its inhabitants. But everytime exponentially faster agencies like Deutsche Wohnen are trying to change the type of population sometimes even using extortion methods, inflating the prices of community payments and rising the rent forcing people who can't not affort it to leave the city. This result of gentrification is ruining the appeal of Berlin.</h2>
+        {{#signedUsers}}
+            <!-- <p class="signees">{{first}} {{last}}</p> -->
+            {{#if url}}
+                <p class="signees">
+                    <i class="fas fa-user-berlin"></i>  &nbsp;<a class="inline highlighted" href="{{url}}">
+                    {{first}} {{last}}</a>
+                    {{#if age}} | {{age}}{{/if}}
+                    {{#if city}}  | <a class="inline" href="/petition/signers/{{city}}">{{city}}</a>{{/if}}
+
+                </p>
+            {{else}}
+                <p class="signees">
+                    <i class="fas fa-user-berlin"></i>  &nbsp;{{first}} {{last}}
+                    {{#if age}}  |  {{age}}{{/if}}
+                    {{#if city}}  |  <a class="inline" href="/petition/signers/{{city}}">{{city}}</a>{{/if}}
+                </p>
+            {{/if}}
+        {{/signedUsers}}
+
+    </div>
+</div>
+
+<!-- {{> footer}} -->

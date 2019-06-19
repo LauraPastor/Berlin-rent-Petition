@@ -1,0 +1,386 @@
+body {
+    background-color: #03105b;
+    color: #ff9280;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+
+}
+h1 {
+
+}
+
+h2 {
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+a {
+    display: block;
+    color: #f2f4fb;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.login {
+    display: inline-block;
+    top: 500px;
+}
+
+
+p {
+    color: #f2f4fb;
+    font-size: 20px;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-left: 100px;
+    /* display: inline-block; */
+}
+
+span {
+    color: #f2f4fb;
+}
+
+.logout {
+    display: inline-block;
+}
+
+.error {
+    color: #00d4ff;
+    position: absolute;
+    top: -25px;
+    font-size: 20px;
+}
+
+.inline {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.displayedSig {
+    background-color: #5D4878;
+    /* width: 100%; */
+}
+
+.highlighted {
+    color: #ff9280;
+}
+
+.sigButtons {
+    position: absolute;
+    top: 290px;
+}
+
+.block {
+    margin-left: 0;
+}
+
+.profile {
+    top: 250px;
+}
+
+
+.container {
+    margin: 100px;
+    margin-top: 50px;
+}
+
+#petitionImg {
+    display: none;
+}
+
+.signees {
+    margin-left: 0px;
+}
+
+
+
+.nounderline {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.notfound {
+    text-align: center;
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////* HEADER  ////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.header {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+    color: #f2f4fb;
+    text-align: right;
+    font-size: 16px;
+}
+
+.active {
+    color: #ff9280;
+}
+
+.mobileheader {
+    display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////* FORMS  /////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+canvas {
+    background-color: #ff9280;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.input-text label {
+	display: block;
+	font-weight: 500;
+	color: #f2f4fb;
+	font-size: 16px;
+	/* text-transform: uppercase; */
+	margin-bottom: 20px;
+    width: 500px;
+}
+
+.input-text input[type="text"],
+input[type="password"],
+input[type="email"] {
+	outline: none;
+	border: 0;
+    background-color: #45315d;
+
+	width: 100%;
+	display: block;
+	font-size: 24px;
+	transition: all .4s ease-in-out;
+	color: #f2f4fb;
+	font-weight: 500;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #45315d inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #f2f4fb !important;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////* BUTTON /////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+
+button {
+    background-color: #00d4ff;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-top: 20px;
+  background-color: #00d4ff;
+  color: #f2f4fb;
+  padding: 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.btn:hover {
+  top: 1px;
+}
+
+.btn:active {
+  box-shadow: none;
+  top: 1px
+}
+
+.delete {
+    padding: 12px 12px;
+    color: #f2f4fb;
+    display: inline;
+    position: relative;
+    top: -21px;
+}
+
+.lightpurple:hover {
+  top: -20px;
+  box-shadow: 1px 1px #7D6A93;
+}
+
+.delete:active {
+  box-shadow: none;
+  top: -20px
+}
+
+.deleteBtn {
+    display: inline;
+    position: relative;
+}
+
+.lightpurple {
+    background-color: #5D4878;
+    box-shadow: 3px 3px #7D6A93;
+}
+
+.sure {
+    position: relative;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////// MEDIA QS  ///////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 1551px) and (max-width: 3000px){
+    .container {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    .sigButtons {
+        top: 300px;
+    }
+    .header {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+
+
+}
+
+@media only screen and (min-width: 774px) and (max-width: 1520px){
+    .sigButtons {
+        top: 350px;
+    }
+    .profile {
+        top: 250px;
+    }
+    .log {
+        top: 300px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 773px){
+    .sigButtons {
+        top: 300px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .displayedSig {
+        width: 350px;
+    }
+
+    .container {
+        margin: 0px;
+        margin-top: 50px;
+    }
+
+    .delete {
+        padding: 8px;
+        top: -16px;
+    }
+
+    .lightpurple:hover {
+      top: -15px;
+      box-shadow: 1px 1px #7D6A93;
+    }
+
+    .delete:active {
+      box-shadow: none;
+      top: -15px
+    }
+
+    .header {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mobileheader {
+        display: block;
+        text-align: right;
+        padding-right: 0px;
+        padding-top: 5px;
+    }
+
+    .login {
+        top: 210px;
+        margin-top: 0;
+    }
+
+    .mobilelinks {
+        position: absolute;
+        text-align: center;
+        width: 100vw;
+        z-index: 10;
+        /* right: 100vw; */
+        right: -110%;
+        transition-duration: 0.6s;
+        transition-timing-function: linear;
+        transition-property: right ;
+        /* transition: right 0.5s ease-in 0.1s; */
+    }
+
+    .activeHeader {
+        position: absolute;
+        right: 0;
+        /* transition: right 0.5s ease-in 0.1s; */
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        font-size: 20px;
+        margin: 0px;
+        color: #f2f4fb;
+    }
+
+    li {
+        padding: 10px;
+        background-color: #7D6A93;
+        border-bottom: 2px solid #45315d;
+    }
+
+    i.mobileButton {
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+
+    .profile {
+        top: 200px;
+    }
+
+    .input-text label {
+        width: 400px;
+    }
+
+
+}

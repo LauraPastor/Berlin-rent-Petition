@@ -1,0 +1,32 @@
+<div class="flex">
+    <div class="container">
+      <h1>Make Berlin rent cheap again!</h1>
+        <h2 class="login hide"></h2>
+        <form method="post">
+            <div class="sigButtons login">
+                {{#if error}}
+                    <div class="error">That username or password does not match!</div>
+                {{/if}}
+                <div class="input-text">
+
+                <div class="input-text">
+                    <label>
+                        Email: <input type="email" name="email" required>
+                    </label>
+                </div>
+                <div class="input-text">
+                    <label>
+                        Password: <input type="password" name="password" required>
+                    </label>
+                </div>
+
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <button class="btn" name="button">Login</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>

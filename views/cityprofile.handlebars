@@ -1,0 +1,27 @@
+
+<div class="flex">
+    <div class="container">
+
+        <img  id="petitionImg" src="berlin".jpg" alt="Berlin">
+
+        <h2> We the undersigned citizens of <span>{{city}}</span> really believe in this topic.   </h2>
+        {{#signedUsers}}
+            {{#if url}}
+                <p class="signees">
+                    <i class=""></i>  &nbsp;<a class="inline" href="{{url}}">
+                    {{first}} {{last}}</a>
+                    {{#if age}}  | {{age}}{{/if}}
+                </p>
+            {{else}}
+                <p class="signees">
+                    <i class=""></i>  &nbsp; {{first}} {{last}}
+                    {{#if age}}  |  {{age}}{{/if}}
+                </p>
+            {{/if}}
+        {{/signedUsers}}
+        <p class="signees">Back to <a class="inline" href="/petition/signers">all signers</a></p>
+
+    </div>
+</div>
+
+<!-- {{> footer}} -->

@@ -1,0 +1,97 @@
+body {
+    color: #155e63;
+    background-color: #eae7e7;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 50vw;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.displayedSig {
+    border: solid #155e63 1px;
+    margin-top: 20px;
+}
+
+.aftercanvas {
+    display: block;
+}
+
+.error {
+    text-align: center;
+    padding: 5px;
+    color: red;
+    font-size: 20px;
+}
+
+form {
+    text-align: center;
+    padding: 10px;
+}
+
+label, input {
+    display: inline-block;
+}
+
+label {
+    padding: 10px;
+}
+
+button {
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #76b39d;
+    color: #f9f8eb;
+    font-size: 20px;
+    border-radius: 10px;
+    outline:none;
+}
+
+
+img {
+    width: 250px;
+    display:block;
+    margin:auto;
+}
+
+input {
+    background-color: #f9f8eb;
+    border: solid #155e63 1px;
+    border-radius: 2px;
+}
+
+canvas {
+    border: solid #155e63 2px;
+    background-color: #f9f8eb;
+    border-radius: 5px;
+    /* width: 100%; */
+}
+
+a {
+    text-align: center;
+    color: #155e63;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.signees {
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+}

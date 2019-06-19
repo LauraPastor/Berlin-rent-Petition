@@ -1,0 +1,63 @@
+<div class="flex">
+    <div class="container">
+        <h2 class="hide"> Edit info: </h2>
+        <div class="sigButtons profile">
+            <form method="post">
+                    {{#if error}}
+                        <div class="error">Sorry but there has been an error.</div>
+                    {{/if}}
+                    <div class="input-text">
+                    <div class="input-text">
+                        <label>
+                            First Name: <input type="text" name="firstname" value="{{firstname}}">
+                        </label>
+                    </div>
+                    <div class="input-text">
+                        <label>
+                            Last Name: <input type="text" name="lastname" value="{{lastname}}">
+                        </label>
+                    </div>
+                    <div class="input-text">
+                        <label>
+                            Email: <input type="email" name="email" value="{{email}}">
+                        </label>
+                    </div>
+                    <div class="input-text">
+                        <label>
+                            Password: <input type="password" name="password">
+                        </label>
+                    </div>
+                    <div class="input-text">
+                        <label>
+                            Age: <input type="text" name="age" value="{{age}}">
+                        </label>
+                    </div>
+                    <div class="input-text">
+                        <label>
+                            City: <input type="text" name="city" value="{{city}}">
+                        </label>
+                    </div>
+                    <div class="input-text">
+                        <label>
+                            Your Website: <input type="text" name="website" value="{{website}}">
+                        </label>
+                    </div>
+
+
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <button class="btn" name="button">Update</button>
+
+                    </div>
+            </form>
+            <div class="deleteBtn">
+            <form class="" action="/profile/delete" method="post">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input id="delete" type="hidden" name="delete" value="">
+                <button action="/profile/delete" class="btn lightpurple delete sure" name="button"><i class="far fa-trash-alt fa-2x"></i></button>
+            </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>

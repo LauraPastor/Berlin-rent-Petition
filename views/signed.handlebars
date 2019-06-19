@@ -1,0 +1,26 @@
+
+
+<div class="flex">
+    <div class="container">
+
+        <img  id="petitionImg" src="berlin.jp" alt="berlin">
+
+        <h2> Thank you <span>{{userfirstname}}</span>!</h2>
+
+        <img class="displayedSig" src="{{sigUrl}}" alt="your signature">
+
+        <div class="deleteBtn">
+            <form class="delete" action="/sig/delete" method="post">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <button class="btn lightpurple delete" name="button"><i class="far fa-trash-alt fa-2x"></i></button>
+            </form>
+        </div>
+
+
+        <!-- <p class="block">🔭 <a class="inline" href="/petition/signers">See all {{numSigs}} signers -></a></p> -->
+
+
+    </div>
+</div>
+
+<!-- {{> footer}} -->

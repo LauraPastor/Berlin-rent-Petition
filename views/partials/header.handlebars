@@ -1,0 +1,43 @@
+<div class="header">
+
+    {{#if userfirstname}}
+
+        <a class="inline nounderline {{#if (checkActiveUrl url "/petition/signers") }}active{{/if}}" href="/petition/signers">&nbsp;All Berliners</a>&nbsp; |
+        {{#if signed}}
+        <a class="inline nounderline {{#if (checkActiveUrl url "/petition/signed") }}active{{/if}}" href="/petition/signed">&nbsp;Your Signature</a>&nbsp; |
+        {{else}}
+        <a class="inline nounderline {{#if (checkActiveUrl url "/petition") }}active{{/if}}" href="/petition">&nbsp;Please Sign</a>&nbsp; |
+        {{/if}}
+        <a class="inline nounderline {{#if (checkActiveUrl url "/profile/edit") }}active{{/if}}" href="/profile/edit">&nbsp;Edit {{userfirstname}}{{#if signed}}{{/if}}</a>&nbsp; |
+        <a class="inline nounderline" href="/logout">&nbsp;Logout</a>
+    {{else}}
+        <a class="login nounderline" href="/login">Login</a>&nbsp; | &nbsp;
+        <a class="inline nounderline" href="/register">Register</a>
+    {{/if}}
+</div>
+<div class="mobileheader">
+    <span><i class="fas fa-bars fa-3x hamburger mobileButton"></i></span>
+    <span class="hidden cross"><i class="fas fa-times fa-3x mobileButton"></i></span>
+    <div class="mobilelinks">
+        <ul>
+            {{#if userfirstname}}
+
+            <li><a class="inline nounderline" href="/profile/edit">Hi {{userfirstname}}</a></li>
+
+            <li><a class="inline nounderline {{#if (checkActiveUrl url "/petition/signers") }}active{{/if}}" href="/petition/signers">&nbsp;All {{numSigs}} Signees</a></li>
+            {{#if signed}}
+            <li><a class="inline nounderline {{#if (checkActiveUrl url "/petition/signed") }}active{{/if}}" href="/petition/signed">&nbsp;Your Signature</a></li>
+            {{else}}
+            <li><a class="inline nounderline {{#if (checkActiveUrl url "/petition") }}active{{/if}}" href="/petition">&nbsp;Please Sign</a></li>
+            {{/if}}
+            <li><a class="inline nounderline {{#if (checkActiveUrl url "/profile/edit") }}active{{/if}}" href="/profile/edit">&nbsp;Edit Profile</a></li>
+            <li><a class="inline nounderline" href="/logout">&nbsp;Logout</a></li>
+
+
+            {{else}}
+                <li><a class="login nounderline" href="/login">Login</a></li>
+                <li><a class="inline nounderline" href="/register">Register</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</div>

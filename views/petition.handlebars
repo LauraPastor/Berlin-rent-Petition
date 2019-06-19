@@ -1,0 +1,36 @@
+<div class="flex">
+    <div class="container">
+        <!-- <h2 id="#mainText"> Sign our petition to get Procter & Gamble to make a body wash called "Knees and Toes" to go with "Head and Shoulders" </h2> -->
+        <h2 id="mainText">  </h2>
+
+        <form method="post">
+            <div class="sigButtons">
+                {{#if error}}
+                    <div class="error">Uh oh, something went wrong. Please try again!</div>
+                {{/if}}
+
+                <input id="sig" type="hidden" name="sig">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <div class="input-text">
+                    <label>
+                        Sign Here:
+                    </label>
+                </div>
+                <canvas id="canv" width="500" height="65"></canvas>
+                <div class="aftercanvas">
+
+                    <button class="btn" name="button">Submit petition</button>
+                </div>
+                <div class="loader">
+
+                </div>
+                <!-- {{> footer}} -->
+            </div>
+
+        </form>
+        <p id="example1"></p>
+
+    </div>
+</div>
+
+{{> sigJs }}
